@@ -6,9 +6,10 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
+  Link,
 } from "@chakra-ui/react";
 import { FaTelegram, FaTwitter, FaMedium } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -57,15 +58,21 @@ export default function Footer() {
           © 2022 <Link to="/">Blood Money</Link>. All rights reserved
         </Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
+          <SocialButton
+            label={"Twitter"}
+            href={"https://twitter.com/SANGRE_ETH"}>
             <FaTwitter fontSize={"25px"} color="red" />
           </SocialButton>
-          <SocialButton label={"Medium"} href={"#"}>
+          <SocialButton
+            label={"Medium"}
+            href={
+              "https://medium.com/@sangre_erc/blood-money-the-sangre-8288f67b6561"
+            }>
             <FaMedium fontSize={"25px"} color="red" />
           </SocialButton>
-          <SocialButton label={"Telegram"} href={"#"}>
+          {/* <SocialButton label={"Telegram"} href={"#"}>
             <FaTelegram fontSize={"25px"} color="red" />
-          </SocialButton>
+          </SocialButton> */}
         </Stack>
       </Container>
     </Box>
