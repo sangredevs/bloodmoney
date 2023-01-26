@@ -51,11 +51,15 @@ export default function Footer() {
         maxW={"6xl"}
         py={1}
         direction={{ base: "column", md: "row" }}
-        spacing={2}
+        spacing={10}
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}>
+        <Text color="gray.200">0x56349122146288AeF64a0033E86DA02351f97Baf</Text>
         <Text color="gray.200">
-          © 2022 <Link to="/">Blood Money</Link>. All rights reserved
+          © 2023 <Link to="/">Blood Money</Link>. All rights reserved
+        </Text>
+        <Text color="gray.200">
+          Tax <b>3/7</b> /Max Txn <b>90Mln</b> /Max Bag <b>180Mln</b>
         </Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton
